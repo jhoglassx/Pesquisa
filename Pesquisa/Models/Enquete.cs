@@ -16,9 +16,11 @@ namespace Pesquisa.Models
         public int Id { get; set; }
 
         [Column("Nome")]
+        [Required]
         public string Nome { get; set; }
 
         [Column("Email")]
+        [Required]
         public string Email { get; set; }
 
         [Column("FaixaSalarioId")]
