@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Pesquisa.Models.Enquete>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Resumo das Enquetes</h1>
+
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FaixaSalario.FaixaSalarial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotivoEmprestimos.EmprestimoMotivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConvenioList.ConvenioNome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FaixaIdades.FaixadeIdade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FaixaSalario.FaixaSalarial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotivoEmprestimos.EmprestimoMotivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConvenioList.ConvenioNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FaixaIdades.FaixadeIdade)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
