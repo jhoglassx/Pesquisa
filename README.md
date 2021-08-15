@@ -1,4 +1,4 @@
-## Sistema de enquete para uma empresa de credito consiguinado
+## Sistema de enquete para uma empresa de Credito Consiguinado
 
 ### Crud basico com algumas regras de negocio simples
 Source com backup do banco de dados sqlserver
