@@ -1,6 +1,7 @@
-## Sistema de enquete para uma empresa de Credito Consiguinado
 
-### Crud basico com algumas regras de negocio simples
+## Sistema de enquete para uma empresa de Crédito Consignado
+
+### Crud básico com algumas regras de negócio simples
 Source com backup do banco de dados sqlserver
 
 ### Tecnologias Usadas C# .NET5, SQLSERVER, ENTITY FRAMEWORK
